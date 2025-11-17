@@ -115,6 +115,9 @@ public class Relations {
 
     public void entityDestroyed(int entity) {
         //TODO: clear all relations using this entity either as source or target
+        //UPDATE after running tests with destroying entities, i expected IndexOutOfBoundsException,
+        //but it didnt happen and the missing entities we actually not present in the result set
+        //as expected??????
     }
 
     private void growArrays(int sizeMod) {
